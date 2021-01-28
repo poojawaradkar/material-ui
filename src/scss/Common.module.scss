@@ -1,0 +1,118 @@
+@import "./_media-queries";
+
+.termsConditions {
+	font-size: var(--text-xs);
+	color: var(--text-light);
+	text-align: center;
+	position: relative;
+	.anchor {
+		font-weight: var(--font-medium);
+		color: var(--text-light);
+	}
+	@include respond-below(sm) {
+		& {
+			font-size: var(--text-xxxs);
+		}
+	}
+	@include respond-above(sm) {
+		& {
+			margin-top: var(--space-xxs);
+		}
+	}
+}
+
+.innerWrapper {
+	margin: auto;
+	@include respond-above(md) {
+		& {
+			max-width: 500px;
+		}
+	}
+	@include respond-below(md) {
+		& {
+			padding: var(--space-md);
+		}
+	}
+}
+.heading {
+	font-family: var(--font-poppins);
+	font-weight: var(--bold);
+	font-size: var(--text-sm);
+	@include respond-below(sm) {
+		& {
+			font-size: var(--text-sm);
+			line-height: 1.25;
+		}
+	}
+	@include respond-above(lg) {
+		& {
+			font-size: var(--text-lg);
+			line-height: 1.5;
+		}
+	}
+	@include respond-above(xxl) {
+		& {
+			font-size: var(--text-xl);
+			line-height: 1.75;
+		}
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: var(--space-md);
+	background-color: var(--white);
+	box-shadow: 0px 0px 10px rgba(20, 25, 78, 0.12);
+	border-radius: 12px;
+	transition: all 0.2s ease;
+	&:hover {
+		cursor: default;
+		transform: translateY(-2px);
+	}
+}
+.subjectTag {
+	display: inline-block;
+	border-radius: 6px;
+	border-bottom-left-radius: 0;
+	padding: 4px 8px;
+	font-weight: var(--font-medium);
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	color: var(--text-dark);
+}
+.chapterName {
+	font-family: var(--font-poppins-sans);
+	font-weight: var(--bold);
+	margin-bottom: var(--space-xxs);
+}
+.slotInfoHolder .iconStyle {
+	margin-right: var(--space-xxs);
+}
+.slotInfoHolder {
+	margin-bottom: var(--space-xxs);
+}
+.fontBold {
+	font-weight: var(--font-medium);
+}
+.displayFlex {
+	display: flex;
+}
+.align-item-center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.flexWrap {
+	flex-wrap: wrap;
+}
+.successText {
+	color: var(--success);
+}
+.mb-5 {
+	margin-bottom: var(--space-xxs);
+}
+.mb10 {
+	margin-bottom: var(--space-xs);
+}
